@@ -1,0 +1,25 @@
+# Anipose project configuration file
+
+project = "hand_tracking_mediapipe"
+nesting = 1
+
+[pipeline]
+videos_raw = "trial_1/videos-raw"
+mediapipe_output = "trial_1/mediapipe_output"
+videos_calibrated = "trial_1/videos-calibrated"
+
+[labeling]
+# MediaPipe provides keypoints for the hands; for example, 21 landmarks for a single hand
+# Customize this based on the MediaPipe output you want to track
+scheme = [
+    ["wrist", "thumb_cmc", "thumb_mcp", "thumb_ip", "thumb_tip"],  # For the thumb
+    ["index_finger_mcp", "index_finger_pip", "index_finger_dip", "index_finger_tip"],  # For the index finger
+    ["middle_finger_mcp", "middle_finger_pip", "middle_finger_dip", "middle_finger_tip"],  # And so on...
+    ["ring_finger_mcp", "ring_finger_pip", "ring_finger_dip", "ring_finger_tip"],
+    ["little_finger_mcp", "little_finger_pip", "little_finger_dip", "little_finger_tip"]
+]
+
+[output]
+# Define output directories for filtered and triangulated data
+filtered_output = "trial_1/pose-analysis/filtered_poses"
+triangulated_output = "trial_1/triangulation/3d_poses"
