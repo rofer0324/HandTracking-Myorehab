@@ -15,3 +15,5 @@ HandTracking_mediapipe/recording/calibration/calib-charuco-camE.mp4
 
 HandTracking_mediapipe/recording/videos-combined
 HandTracking_mediapipe/recording/videos-raw
+
+pose-2d/*
