@@ -81,7 +81,9 @@ pip install -r requirements.txt
 
 Aquí se muestra un ejemplo visual del análisis de movimiento realizado:
 
-![Resultados del modelo](pose-3d_gif.gif)
+<p align="center">
+  <img src="pose-3d_gif.gif" alt="Resultados del modelo" />
+</p>
 
 ---
 
