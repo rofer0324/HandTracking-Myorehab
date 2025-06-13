@@ -5,5 +5,13 @@ Test_1-myodlc-2025-05-16-3d
 HandTracking
 vecinita
 DIR.ipynb
-HandTracking_mediapipe/recording/calibration
+
+HandTracking_mediapipe/recording/calibration/calib-charuco-camA.mp4
+HandTracking_mediapipe/recording/calibration/calib-charuco-camB.mp4
+HandTracking_mediapipe/recording/calibration/calib-charuco-camC.mp4
+HandTracking_mediapipe/recording/calibration/calib-charuco-camD.mp4
+HandTracking_mediapipe/recording/calibration/calib-charuco-camE.mp4
+
+
+HandTracking_mediapipe/recording/videos-combined
 HandTracking_mediapipe/recording/videos-raw
