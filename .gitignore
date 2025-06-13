@@ -3,5 +3,7 @@ hand_tracking/calibration/*
 Video_test
 Test_1-myodlc-2025-05-16-3d
 HandTracking
-pose-2d
 vecinita
+DIR.ipynb
+HandTracking_mediapipe/recording/calibration
+HandTracking_mediapipe/recording/videos-raw
