@@ -46,13 +46,6 @@ scheme = [
 videos_raw = "C:/Users/myore/Desktop/MYOREHAB/HandTracking_mediapipe/recording/videos-raw"
 pose_3d = "C:/Users/myore/Desktop/MYOREHAB/HandTracking_mediapipe/recording/pose-3d"
 
-#CAMBIOS AQUI
-#[path]
-#pipeline_prefix = "C:/Users/myore/Desktop/MYOREHAB/HandTracking_mediapipe/recording/videos-raw"
-#input_data = "C:/Users/myore/Desktop/MYOREHAB/HandTracking_mediapipe/recording/videos-raw"
-#output_data = "C:/Users/myore/Desktop/MYOREHAB/HandTracking_mediapipe/recording/videos-3d"
-
-
 [triangulation]
 triangulate = true
 cam_regex = '(cam[A-Z])'
