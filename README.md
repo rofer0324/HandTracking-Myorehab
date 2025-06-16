@@ -12,14 +12,7 @@
 MYOREHAB/
 ├──environments/
 ├──recording/
-│   ├── calibration/                # Archivos de calibración de cámaras
-│   ├── pose-2d/                    
-│   ├── pose-2d-filtered/           
-│   ├── pose-3d/                    # Coordenadas 3D trianguladas con Anipose
-│   ├── videos-3d/                  # Videos con puntos 3D proyectados
-│   ├── videos-combined/            # Videos combinados
-│   ├── videos-labeled/             
-│   ├── videos-labeled-filtered/    
+│   ├── calibration/                # Archivos de calibración de cámaras   
 │   ├── videos-raw/                 # Videos sin procesar (entrada)
 │   ├── mediapipe_analyze.py        # Script principal de análisis con MediaPipe
 ├── config.toml                     # Archivo de configuración general
@@ -33,11 +26,14 @@ MYOREHAB/
 Asegúrate de haber instalado ANACODA (Gestor de Entornos Virtuales)
 - [Web Oficial de Anaconda](https://www.anaconda.com/docs/main)
 
-### 1. Entorno de Anipose + MediaPipe
+### 1. Entorno de Anipose
 
 ```bash
-conda env create -f env_myorehab.yml
+conda env create -f env_anipose.yml
 ```
+
+* Instalar MediaPipe en otro entorno para ejecutar el _mediapipe_analyze.py_
+* Crear la estructura del proyecto.
 
 ### 2. Detección de puntos con MediaPipe
 
@@ -48,10 +44,12 @@ python mediapipe_analyze.py
 ### 3. Calibración y triangulación con Anipose
 
 ```bash
-anipose calibrate
-anipose label
 anipose filter
+anipose calibrate
 anipose triangulate
+anipose label-2d
+anipose label-2d-filter
+anipose label-3d
 anipose label-combined
 ```
 
